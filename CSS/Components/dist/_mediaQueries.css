@@ -1,0 +1,312 @@
+@media screen and (max-width: 1038px) {
+  nav {
+    padding: 1rem 3rem !important;
+  }
+  nav .logo {
+    order: 2 !important;
+  }
+  nav .hr {
+    display: none;
+  }
+  nav .media_nav {
+    background: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3rem;
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    left: -120%;
+    width: 300px;
+    height: 100vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out;
+    flex-direction: column;
+    gap: 0 !important;
+    overflow-y: scroll;
+  }
+  nav .media_nav .cross_sideBat {
+    display: block !important;
+  }
+  nav .media_nav .navbar_list {
+    flex-direction: column;
+    align-items: flex-start !important;
+    order: 2;
+    margin-top: 2.5rem;
+  }
+  nav .media_nav .navbar_list li {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    padding: 0.6rem 0;
+  }
+  nav .media_nav .navbar_list li a {
+    color: #0E43AB !important;
+  }
+  nav .media_nav .signing_user {
+    gap: 0;
+    flex-direction: column;
+    order: 1;
+  }
+  nav .media_nav .signing_user .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  nav .media_nav .signing_user .buttons .acc {
+    color: #0E43AB !important;
+  }
+  nav .media_nav .signing_user .buttons .active {
+    background: #0E43AB !important;
+    color: #fff !important;
+  }
+  nav .media_nav .signing_user .inputs {
+    width: 100%;
+  }
+  nav .media_nav .signing_user .inputs input {
+    width: 100%;
+    color: #0E43AB !important;
+  }
+  nav .menuBars {
+    display: block !important;
+    cursor: pointer;
+    order: 1 !important;
+  }
+  nav .menuBars i {
+    color: #fff;
+    font-size: 22px;
+  }
+
+  main .banner {
+    height: 400px !important;
+  }
+  main .banner .right {
+    height: 400px !important;
+    right: 0 !important;
+  }
+  main .banner .left {
+    width: 40% !important;
+    padding-left: 3rem !important;
+  }
+  main .banner .left h1 {
+    font-size: 3rem !important;
+  }
+  main .banner .left p {
+    font-size: 14px !important;
+  }
+  main .section_category {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+  main .xBox_section {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+  main .xBox_section .left .images {
+    height: 50px !important;
+  }
+  main .xBox_section .left .content p {
+    font-size: 14px;
+  }
+
+  #gamesDevices,
+section {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  #footer .main_footer, #footer .footer {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  nav .hr {
+    display: none;
+  }
+
+  main .banner {
+    height: 400px !important;
+  }
+  main .banner .right {
+    height: 400px !important;
+  }
+  main .banner .left {
+    padding-left: 2.5rem !important;
+  }
+  main .banner .left h1 {
+    font-size: 2.5rem !important;
+  }
+
+  section #games_platform .swiper-slide {
+    flex-direction: column;
+  }
+  section #games_platform .swiper-slide .left .images {
+    height: 300px !important;
+  }
+}
+@media screen and (max-width: 756px) {
+  main .banner .right {
+    display: none;
+  }
+  main .banner .left {
+    width: 75% !important;
+    padding-left: 3rem !important;
+  }
+  main .banner .left h1 {
+    font-size: 3rem !important;
+  }
+  main .banner .left p {
+    text-align: justify;
+  }
+  main .xBox_section .left {
+    width: 100% !important;
+  }
+  main .xBox_section .left .images {
+    height: 40px !important;
+  }
+  main .xBox_section .left .content p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav {
+    padding: 1rem 2rem !important;
+  }
+
+  main .banner .left {
+    width: 100% !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  main .banner .left h1 {
+    font-size: 3rem !important;
+  }
+  main .section_category {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  main .section_category h1 {
+    font-size: 2rem !important;
+  }
+  main .xBox_section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    height: 400px !important;
+  }
+  main .xBox_section .right {
+    display: none !important;
+  }
+
+  #filter .nav li {
+    font-size: 11px;
+  }
+  #filter .games {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  #filter .games .overlay_content {
+    bottom: 0 !important;
+  }
+  #filter .games video {
+    display: none !important;
+  }
+  #filter .games:hover img, #filter .games img {
+    display: block !important;
+  }
+
+  section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  section #games_platform .swiper-slide {
+    padding: 0 !important;
+  }
+  section #games_platform .swiper-slide .right .content h1 {
+    font-size: 1.7rem !important;
+  }
+  section #games_platform .swiper-slide .right .content p {
+    font-size: 12px !important;
+  }
+  section #games_platform .swiper-slide .right .content h3 {
+    font-size: 1rem !important;
+  }
+  section #games_platform #Nextbtn, section #games_platform #Prevbtn {
+    top: 40%;
+  }
+  section #games_platform #Nextbtn {
+    right: 0;
+  }
+  section #games_platform #Prevbtn {
+    left: 0;
+  }
+
+  #gamingPlatform .content h1 {
+    font-size: 1.7rem;
+  }
+
+  #gamesDevices {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  #gamesDevices .heading {
+    font-size: 1.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  #gamesDevices .content .swiper .swiper-slide {
+    width: fit-content !important;
+  }
+  #gamesDevices .content .swiper .swiper-slide .details .images {
+    width: 140px !important;
+  }
+  #gamesDevices .content .swiper .swiper-slide .details .texts {
+    width: 110px !important;
+  }
+  #gamesDevices .content .swiper .swiper-slide .details .texts h1 {
+    font-size: 1.4rem !important;
+  }
+  #gamesDevices .content .swiper .swiper-slide .details .texts p {
+    font-size: 10px !important;
+    width: 100% !important;
+  }
+  #gamesDevices .content .swiper .swiper-slide.playstation .details .texts h1, #gamesDevices .content .swiper .swiper-slide.playstation .details .texts p, #gamesDevices .content .swiper .swiper-slide.playstation .details .texts .starts {
+    position: relative;
+    left: -50px;
+  }
+  #gamesDevices .content .swiper .swiper-slide.VR-play .details .texts p {
+    font-size: 1.2rem !important;
+  }
+
+  #footer .footer {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  #footer .footer .contents_ {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  #footer .footer .contents_ h1 {
+    font-size: 2rem !important;
+  }
+  #footer .footer .contents_ h3 {
+    font-size: 15px !important;
+  }
+  #footer .footer .contents_ p {
+    font-size: 10px !important;
+  }
+  #footer .main_footer {
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+  }
+  #footer .main_footer .logos {
+    width: 25px;
+    height: 25px;
+  }
+  #footer .main_footer .footer_list li a {
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  #filter .container {
+    justify-content: center;
+  }
+}
