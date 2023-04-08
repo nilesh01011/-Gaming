@@ -22,7 +22,7 @@ export default function Home() {
   useEffect(() => {
     setInterval(function () {
       setPageActive(false);
-    }, 2000);
+    }, 2500);
   }, [])
 
   return (
