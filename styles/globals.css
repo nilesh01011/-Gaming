@@ -3,25 +3,111 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  scroll-behavior: smooth;
+}
+
+#banner::after,
+#banner::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+#card_overlayContent {
+  mask-image: linear-gradient(
+    to top,
+    black,
+    black,
+    black,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1)
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to top,
+    black,
+    black,
+    black,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+#section {
+  clip-path: polygon(0 2%, 100% 26%, 100% 100%, 0% 100%);
+}
+
+#slider .swiper-button-next,
+#slider .swiper-button-prev {
+  color: #aaa;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  width: 38px;
+  height: 38px;
+}
+
+#sliderOne .swiper-button-prev::after,
+#sliderOne .swiper-button-next::after,
+#slider .swiper-button-next::after,
+#slider .swiper-button-prev::after {
+  font-size: 16px;
+}
+
+#sliderOne .swiper-button-prev,
+#sliderOne .swiper-button-next {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  background: #fff;
+  color: coral;
+  border: 2px solid #fff;
+}
+
+@keyframes zoomInOut_01 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+#loading {
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 140, 15);
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    77deg,
+    rgba(255, 140, 15, 1) 30%,
+    rgba(255, 194, 28, 1) 100%
+  );
+  z-index: 1000000 !important;
+  position: fixed;
+  top: 0;
+}
+
+#loading .loading_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#loading .loading_container span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  animation: zoomInOut_01 1s ease infinite;
 }
