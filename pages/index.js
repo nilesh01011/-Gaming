@@ -13,7 +13,7 @@ import FooterSection from '@/components/FooterSection'
 import { useEffect, useState } from 'react'
 import Loading from '@/components/Loading'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
