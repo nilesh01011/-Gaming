@@ -7,7 +7,7 @@ function FooterSection() {
     after:content-[""] after:absolute after:w-full after:z-10 after:h-[500px] after:left-0 after:bottom-0 after:right:-0 after:top-0 after:bg-[#0E43AB] after:opacity-[0.8]
     '>
             <div id="help" className='absolute flex items-center justify-center flex-col -mt-[300px] z-50 w-full h-max text-white'>
-                <h1 className='text-[41px] font-bold'>SUBCRIBE</h1>
+                <h1 className='text-[41px] font-bold uppercase'>subscribe</h1>
                 <h3 className='mb-[1rem] font-bold text-[1.18rem]'>TO THE NEWSLETTER</h3>
                 <p className='text-[#ccc] text-[12px] mb-[1rem] text-center lg:w-[30%] md:w-[60%] w-[83%] mx-auto'>Lorem ipsum dolor sit amet, lorem minus consectetur adipisicing elit. Cupiditate minus
                     aliquid impedit
